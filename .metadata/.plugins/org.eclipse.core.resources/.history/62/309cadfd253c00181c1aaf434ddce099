@@ -1,0 +1,31 @@
+package nhoanggiang.test;
+
+import java.sql.Connection;
+import java.util.Properties;
+
+import com.mysql.jdbc.Driver;
+
+public class TestConnectionToMySql {
+
+	public static void main(String[] args) {
+		try{
+			String strConn = "jdbc:mysql://localhost/dbtaisa";
+			Properties pro = new Properties();
+			pro.put("user", "root");
+			pro.put("password", "");
+			Driver driver = new Driver();
+			Connection conn = driver.connect(strConn, pro);
+			if(conn != null){
+				System.out.println("Ket noi toi CSDL dbtaisan thanh cong");
+			}
+			else{
+				
+				System.err.println("Ket noi toi CSDL dbtaisan that bai");
+			}
+		}
+		catch(Exception ex){
+			ex.printStackTrace();
+		}
+	}
+
+}

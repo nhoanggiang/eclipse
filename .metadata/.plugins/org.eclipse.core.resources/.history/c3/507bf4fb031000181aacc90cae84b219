@@ -1,0 +1,23 @@
+package nhoanggiang.ui;
+
+import javax.swing.JFrame;
+
+public class HocJMenuBarContextMenuJToolbar extends JFrame {
+	public HocJMenuBarContextMenuJToolbar(String title){
+		super(title);
+		
+	}
+	public void addControls(){
+		
+	}
+	public void addEvents(){
+		
+	}
+	public void showWindow(){
+		this.setSize(600, 500);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
+
+}

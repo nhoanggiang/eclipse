@@ -1,0 +1,7 @@
+package nhoanggiang.ui;
+
+import javax.swing.JFrame;
+
+public class HocJMenuBarContextMenuJToolbar extends JFrame {
+
+}

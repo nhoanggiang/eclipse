@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;nhoanggiang.model.PhongBa&apos; to &apos;PhongBan&apos;&#x0D;&#x0A;- Original project: &apos;Bai19JavaNangCao&apos;&#x0D;&#x0A;- Original element: &apos;nhoanggiang.model.PhongBa&apos;&#x0D;&#x0A;- Renamed element: &apos;nhoanggiang.model.PhongBan&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PhongBa&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;nhoanggiang.model{PhongBa.java[PhongBa" matchStrategy="1" name="PhongBan" qualified="false" references="true" similarDeclarations="false" stamp="1517735419977" textual="false" version="1.0"/>
+</session>

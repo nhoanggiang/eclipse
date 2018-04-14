@@ -1,0 +1,61 @@
+package nhoanggiang.ui;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class HocJMenuBarContextMenuJToolbar extends JFrame {
+	JMenuBar mnuBar;// Noi chua cac JMenu
+	
+	JMenu mnuFile;
+	JMenu mnuEdit;
+	JMenu mnuHelp;
+	
+	JMenuItem mnuFileNew;
+	JMenuItem mnuFileOpen;
+	JMenuItem mnuFileExit;
+	
+	JMenuItem mnuEditCopy;
+	JMenuItem mnuEditPaste;
+	JMenuItem mnuEditDelete;
+	
+	JMenuItem mnuHelpGui;
+	JMenuItem mnuHelpAbout;
+	
+	public HocJMenuBarContextMenuJToolbar(String title){
+		super(title);
+		addControls();
+		addEvents();
+		
+		
+	}
+	public void addControls(){
+		mnuBar = new JMenuBar();
+		setJMenuBar(mnuBar);
+		mnuFile = new JMenu("File");
+		mnuBar.add(mnuFile);
+		mnuEdit = new JMenu("Edit");
+		mnuBar.add(mnuEdit);
+		mnuHelp = new JMenu("Help");
+		mnuBar.add(mnuHelp);
+		
+		mnuFileNew = new JMenuItem("New");
+		mnuFile.add(mnuFileNew);
+		mnuFileOpen = new JMenuItem("Open");
+		mnuFile.add(mnuFileOpen);
+		mnuFileExit = new JMenuItem("Exit");
+		mnuFile.add(mnuFileExit);
+		
+	}
+	public void addEvents(){
+		
+	}
+	public void showWindow(){
+		this.setSize(600, 500);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
+
+}
